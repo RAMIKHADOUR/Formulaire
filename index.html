@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Formulaire</title>
 </head>
+
 <body>
-    
+    <form action="action.php" method="post">
+
+        <ul>
+            <li><label for="">Name :</label>
+                <input type="text" id="name" name="user_name" autocomplete="off">
+            </li>
+
+            <li><label for="">E-Mail:</label>
+                <input type="text" id="mail" name="user_mail" autocomplete="off">
+            </li>
+
+            <li><label for="">Message :</label>
+                <textarea id="message" name="user_message"></textarea>
+            </li>
+            <li><button type="submit" name="valide">Envoyer</button>
+            </li>
+        </ul>
+
+    </form>
 </body>
+
 </html>
